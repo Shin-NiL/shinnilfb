@@ -4,6 +4,12 @@ Simple *App invite on Facebook* module for [Godot Game Engine](http://godotengin
 
 To use it, make sure you're able to compile the Godot android template, you can find the instructions [here](http://docs.godotengine.org/en/latest/reference/compiling_for_android.html). 
 
+For Godot 3.1.0 or higher, remove the line:
+
+	 implementation "com.android.support:support-core-utils:28.0.0"
+    
+from the file _platform/android/build.gradle.template_ before compiling to avoid conflicts between the support libs.
+
 
 **Module name (engine.cfg):**
 ```
